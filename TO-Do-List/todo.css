@@ -1,21 +1,21 @@
-.main{
-    margin: 0 auto;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'popins', sans-serif;
 }
-.padd{
-    padding: 10px;
+.container {
+  width: 100vw; /* Use viewport width for better responsiveness */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f); /* Shorthand for background-color */
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the container's width */
 }
-.add{
-    background-color: rgb(209, 240, 240);
-    text-align: center;
-}
-.bg-color{
-    background-color: #e5e5e5;
-}
-.padding{
-    padding: 10px;
-    padding-left: 10px;
-    border: none;
-    font-size: 17px; 
-    background-color:#e5e5e5 ;
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 12px;
 }
