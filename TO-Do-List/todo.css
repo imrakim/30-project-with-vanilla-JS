@@ -1,0 +1,21 @@
+.main{
+    margin: 0 auto;
+    padding: 0;
+}
+.padd{
+    padding: 10px;
+}
+.add{
+    background-color: rgb(209, 240, 240);
+    text-align: center;
+}
+.bg-color{
+    background-color: #e5e5e5;
+}
+.padding{
+    padding: 10px;
+    padding-left: 10px;
+    border: none;
+    font-size: 17px; 
+    background-color:#e5e5e5 ;
+}
