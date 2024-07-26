@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <link rel="stylesheet" href="./todo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./todo.css" />
+  </head>
+  <body>
     <div class="container">
-       <div class="todo-app">
+      <div class="todo-app">
         <h2>Todo List</h2>
         <div class="row">
-            <input type="text" id="input" placeholder="Add Your Text">
-            <Button onclick="addTask()">Save Text</Button>
+          <input type="text" id="input" placeholder="Add Your Text" />
+          <button onclick="addTask()">Save Text</button>
         </div>
-        <ul id="list-container">
-            <!-- <li>Task-1</li>
-            <li>Task-2</li>
-            <li>Task-3</li> -->
-        </ul>
-       </div>
-
-
+        <ul id="list-container"></ul>
+      </div>
     </div>
 
-
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>
