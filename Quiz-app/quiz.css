@@ -60,3 +60,6 @@ color: #fff;
     cursor: pointer;
     display: none;
 }
+.incorrect{
+    background-color: #ff9393;
+}
