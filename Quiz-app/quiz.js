@@ -1,0 +1,65 @@
+const questions = [
+  {
+    Questions: "Which is the largest Animal In the world",
+    answer: [
+      { text: "shark", correcct: false },
+      { text: "Blue While", correcct: true },
+      { text: "Elephant", correcct: false },
+      { text: "Gerraf", correcct: false },
+    ],
+  },
+  {
+    Questions: "Who is The Founder of Javascript",
+    answer: [
+      { text: "Brendan Eich", correcct: true },
+      { text: "Mark Zuckerberg", correcct: false },
+      { text: "Elon Musk", correcct: false },
+      { text: "Bill Gates", correcct: false },
+    ],
+  },
+  {
+    Questions: "When Fouwhen microsoft founded",
+    answer: [
+      { text: "April 4, 1976", correcct: false },
+      { text: "April 14, 1977", correcct: false },
+      { text: "April 4, 1975", correcct: true },
+      { text: "April 24, 1965", correcct: false },
+    ],
+  },
+  {
+    Questions: "who is the founder of facebook",
+    answer: [
+      { text: "Brendan Eich", correcct: false },
+      { text: " Mark Zuckerberg", correcct: true },
+      { text: "Elon Musk", correcct: false },
+      { text: "Bill Gates", correcct: false },
+    ],
+  },
+];
+
+const questionsElement = document.getElementById("questions");
+const answerButton = document.getElementById("answer-button");
+const nextButton = document.getElementById("next-btn");
+
+let currentQuestionsIndex = 0;
+let score = 0;
+
+function startQuiz() {
+  currentQuestionsIndex = 0;
+  score = 0;
+  nextButton.innerHTML = "NEXT";
+  showQuestions();
+}
+
+function showQuestions() {
+  let currentQuestions = questions[currentQuestionsIndex];
+  let questionNO = currentQuestionsIndex + 1;
+  questionsElement.innerHTML = questionNO + "." + currentQuestions.Questions;
+
+  currentQuestions.answer.forEach((answer) => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text;
+    button.classList.add("btn");
+    answerButton.appendChild(button);
+  });
+}

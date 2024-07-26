@@ -21,6 +21,7 @@ body{
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding: 30px;
+    padding-left: 0px;
 }
 .quiz{
     padding: 20px 0;
@@ -41,4 +42,21 @@ body{
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+background-color: #222;
+color: #fff;
+}
+#next-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0 ;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
 }
